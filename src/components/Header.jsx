@@ -48,14 +48,14 @@ export default function Header() {
         </div>
         <div className="resume-actions">
           <a
-            href="https://example.com/resume"
+            href="/Aung_Khant_Zin_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn-primary"
           >
             View resume
           </a>
-          <a href="/resume.pdf" download className="btn-secondary ghost">
+          <a href="/Aung_Khant_Zin_Resume.pdf" download className="btn-secondary ghost">
             Download PDF
           </a>
         </div>
