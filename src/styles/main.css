@@ -287,16 +287,33 @@ main {
 }
 
 .typewriter {
+  display: block;
   margin: 12px auto;
   max-width: 60ch;
   font-weight: 600;
   font-size: 1rem;
   color: var(--primary-dark);
+}
+
+.typewriter-primary {
+  white-space: normal;
+  color: transparent;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 50%, var(--primary) 100%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientShift 6s linear infinite;
+}
+
+.typewriter-secondary {
+  margin-top: 4px;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid var(--primary);
-  animation: typing 8s steps(60, end) infinite, caret 1s steps(1) infinite;
+  animation: typingSecondary 10s steps(45, end) infinite, caret 1s steps(1) infinite;
 }
+
 
 .header h1 {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
@@ -646,18 +663,33 @@ main {
   color: var(--muted);
 }
 
-@keyframes typing {
+@keyframes typingSecondary {
   0% {
     width: 0;
   }
   40% {
+    width: 0;
+  }
+  65% {
     width: 100%;
   }
-  70% {
+  80% {
     width: 100%;
+  }
+  95% {
+    width: 0;
   }
   100% {
     width: 0;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
   }
 }
 

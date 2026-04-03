@@ -8,9 +8,8 @@ export default function Header() {
         <img src={profile} alt="Aung Khant Zin" className="profile-pic" />
       </div>
       <p className="eyebrow">Turning Designs into Code</p>
-      <p className="typewriter">
-        Aspiring Frontend Developer — Available for full-time opportunities
-      </p>
+      <p className="typewriter typewriter-primary">Aspiring Frontend Developer</p>
+      <p className="typewriter typewriter-secondary">Available for full-time opportunities</p>
       <h1>Building polished, human-focused interfaces</h1>
       <p className="lead">
         I ship performant, responsive products with React, TypeScript, and a
