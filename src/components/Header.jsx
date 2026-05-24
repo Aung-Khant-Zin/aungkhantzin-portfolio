@@ -47,7 +47,7 @@ export default function Header() {
         </div>
         <div className="resume-actions">
           <a
-            href="/RESUME_AUNGKHANTZIN.pdf"
+            href="/Aung_Khant_Zin Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn-primary"
